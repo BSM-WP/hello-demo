@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">Hello Demo</string>
     <string name="hello_message">Hello World</string>
+    <string name="count_button">Bấm vào tôi!</string>
+    <string name="counter_template">Số lần bấm: %d</string>
 </resources>

@@ -8,3 +8,9 @@
 .externalNativeBuild
 .cxx
 app/build/
+
+# Xcode / iOS
+ios/**/xcuserdata/
+ios/**/*.xcworkspace/xcuserdata/
+ios/**/DerivedData/
+ios/**/.build/

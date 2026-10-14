@@ -15,11 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         val counterText = findViewById<TextView>(R.id.counterText)
         val countButton = findViewById<Button>(R.id.countButton)
+        val resetButton = findViewById<Button>(R.id.resetButton)
 
         counterText.text = getString(R.string.counter_template, clickCount)
 
         countButton.setOnClickListener {
             clickCount++
+            counterText.text = getString(R.string.counter_template, clickCount)
+        }
+
+        resetButton.setOnClickListener {
+            clickCount = 0
             counterText.text = getString(R.string.counter_template, clickCount)
         }
     }

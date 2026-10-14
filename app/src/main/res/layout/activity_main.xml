@@ -30,8 +30,17 @@
         android:id="@+id/countButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/button_background"
         android:text="@string/count_button"
         android:textColor="@color/button_text" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/reset_button_background"
+        android:text="@string/reset_button"
+        android:textColor="@color/reset_button_text" />
 
 </LinearLayout>

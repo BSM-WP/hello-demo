@@ -7,6 +7,7 @@ struct ContentView: View {
     private let gradientEnd = Color(red: 0x8E / 255, green: 0x24 / 255, blue: 0xAA / 255)
     private let counterTextColor = Color(red: 0xFF / 255, green: 0xF5 / 255, blue: 0x9D / 255)
     private let buttonBackground = Color(red: 0x00 / 255, green: 0xC8 / 255, blue: 0x53 / 255)
+    private let resetButtonBackground = Color(red: 0xD5 / 255, green: 0x00 / 255, blue: 0x00 / 255)
 
     var body: some View {
         ZStack {
@@ -34,6 +35,17 @@ struct ContentView: View {
                         .padding(.horizontal, 24)
                         .padding(.vertical, 12)
                         .background(buttonBackground)
+                        .cornerRadius(8)
+                }
+
+                Button(action: {
+                    clickCount = 0
+                }) {
+                    Text("Reset")
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 12)
+                        .background(resetButtonBackground)
                         .cornerRadius(8)
                 }
             }

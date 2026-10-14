@@ -6,4 +6,6 @@
     <color name="counter_text">#FFF59D</color>
     <color name="button_background">#00C853</color>
     <color name="button_text">#FFFFFF</color>
+    <color name="reset_button_background">#D50000</color>
+    <color name="reset_button_text">#FFFFFF</color>
 </resources>

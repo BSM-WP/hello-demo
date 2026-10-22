@@ -10,6 +10,8 @@
 		FACE00000000000000000001 /* HelloDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000002 /* HelloDemoApp.swift */; };
 		FACE00000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000004 /* ContentView.swift */; };
 		FACE00000000000000000021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000020 /* Assets.xcassets */; };
+		FACE00000000000000000022 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000023 /* LoginView.swift */; };
+		FACE00000000000000000024 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000025 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		FACE00000000000000000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FACE00000000000000000005 /* HelloDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACE00000000000000000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACE00000000000000000023 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FACE00000000000000000025 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			children = (
 				FACE00000000000000000002 /* HelloDemoApp.swift */,
 				FACE00000000000000000004 /* ContentView.swift */,
+				FACE00000000000000000023 /* LoginView.swift */,
+				FACE00000000000000000025 /* HomeView.swift */,
 				FACE00000000000000000020 /* Assets.xcassets */,
 			);
 			path = HelloDemo;
@@ -127,6 +133,8 @@
 			files = (
 				FACE00000000000000000001 /* HelloDemoApp.swift in Sources */,
 				FACE00000000000000000003 /* ContentView.swift in Sources */,
+				FACE00000000000000000022 /* LoginView.swift in Sources */,
+				FACE00000000000000000024 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

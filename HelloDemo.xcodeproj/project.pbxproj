@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		FACE00000000000000000001 /* HelloDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000002 /* HelloDemoApp.swift */; };
 		FACE00000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000004 /* ContentView.swift */; };
+		FACE00000000000000000021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACE00000000000000000020 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FACE00000000000000000002 /* HelloDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDemoApp.swift; sourceTree = "<group>"; };
 		FACE00000000000000000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FACE00000000000000000005 /* HelloDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACE00000000000000000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			children = (
 				FACE00000000000000000002 /* HelloDemoApp.swift */,
 				FACE00000000000000000004 /* ContentView.swift */,
+				FACE00000000000000000020 /* Assets.xcassets */,
 			);
 			path = HelloDemo;
 			sourceTree = "<group>";
@@ -111,6 +114,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACE00000000000000000021 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +191,7 @@
 		FACE00000000000000000018 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20261022;
 				ENABLE_PREVIEWS = YES;
@@ -211,6 +216,7 @@
 		FACE00000000000000000019 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20261022;
 				ENABLE_PREVIEWS = YES;

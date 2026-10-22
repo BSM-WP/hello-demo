@@ -19,56 +19,61 @@ struct LoginView: View {
             )
             .ignoresSafeArea()
 
-            VStack(spacing: 20) {
-                Image(systemName: "person.crop.circle.fill")
-                    .resizable()
-                    .frame(width: 72, height: 72)
-                    .foregroundColor(.white)
+            GeometryReader { proxy in
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 20) {
+                        Image(systemName: "person.crop.circle.fill")
+                            .resizable()
+                            .frame(width: 72, height: 72)
+                            .foregroundColor(.white)
 
-                Text("Xin chào!")
-                    .font(.system(size: 28, weight: .bold))
-                    .foregroundColor(.white)
+                        Text("Xin chào!")
+                            .font(.system(size: 28, weight: .bold))
+                            .foregroundColor(.white)
 
-                Text("Đăng nhập để tiếp tục")
-                    .font(.system(size: 15))
-                    .foregroundColor(.white.opacity(0.85))
+                        Text("Đăng nhập để tiếp tục")
+                            .font(.system(size: 15))
+                            .foregroundColor(.white.opacity(0.85))
 
-                VStack(spacing: 14) {
-                    TextField("Tên đăng nhập", text: $username)
-                        .padding(14)
-                        .background(Color.white.opacity(0.92))
-                        .cornerRadius(10)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
+                        VStack(spacing: 14) {
+                            TextField("Tên đăng nhập", text: $username)
+                                .padding(14)
+                                .background(Color.white.opacity(0.92))
+                                .cornerRadius(10)
+                                .autocapitalization(.none)
+                                .disableAutocorrection(true)
 
-                    SecureField("Mật khẩu", text: $password)
-                        .padding(14)
-                        .background(Color.white.opacity(0.92))
-                        .cornerRadius(10)
+                            SecureField("Mật khẩu", text: $password)
+                                .padding(14)
+                                .background(Color.white.opacity(0.92))
+                                .cornerRadius(10)
 
-                    if let errorMessage {
-                        Text(errorMessage)
-                            .font(.system(size: 13))
-                            .foregroundColor(.yellow)
+                            if let errorMessage {
+                                Text(errorMessage)
+                                    .font(.system(size: 13))
+                                    .foregroundColor(.yellow)
+                            }
+
+                            Button(action: handleLogin) {
+                                Text("Đăng nhập")
+                                    .font(.system(size: 17, weight: .semibold))
+                                    .foregroundColor(gradientEnd)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 14)
+                                    .background(Color.white)
+                                    .cornerRadius(10)
+                            }
+                            .padding(.top, 4)
+                        }
+                        .padding(24)
+                        .background(Color.black.opacity(0.18))
+                        .cornerRadius(20)
+                        .padding(.horizontal, 12)
                     }
-
-                    Button(action: handleLogin) {
-                        Text("Đăng nhập")
-                            .font(.system(size: 17, weight: .semibold))
-                            .foregroundColor(gradientEnd)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 14)
-                            .background(Color.white)
-                            .cornerRadius(10)
-                    }
-                    .padding(.top, 4)
+                    .padding(24)
+                    .frame(minHeight: proxy.size.height)
                 }
-                .padding(24)
-                .background(Color.black.opacity(0.18))
-                .cornerRadius(20)
-                .padding(.horizontal, 12)
             }
-            .padding(24)
         }
     }
 
